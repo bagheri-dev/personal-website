@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa6"
 
 export const Hero = () => {
     return (
-        <div className="relative pt-3 lg:pt-6">
+        <div className="relative pt-3 lg:pt-6 mb-8 lg:mb-[160px]">
             <div className="hidden absolute bottom-0 right-0 xl:flex flex-col gap-28 items-center">
                 <p className="-rotate-90 text-[#7E7E7E]">bagheri.develop@gmail.com</p>
                 <span className="w-0.5 h-20 bg-[#7E7E7E]"></span>
