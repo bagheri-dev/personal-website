@@ -3,7 +3,7 @@ import { SiteContainer } from "../Shared/SiteContainer"
 
 export const CodingActivity = () => {
     return (
-        <div className="pb-8 lg:pb-[160px]">
+        <div id="activity" className="pb-8 lg:pb-[160px]">
             <SiteContainer>
                 <div className="flex items-end gap-x-2 pb-10">
                     <Image className="w-10 lg:w-[54px]" src={"/4.svg"} alt="icon 4" width={54} height={82} />

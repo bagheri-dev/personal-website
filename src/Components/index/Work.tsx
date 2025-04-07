@@ -15,7 +15,7 @@ const workHistory = [
 
 export const Work = () => {
     return (
-        <div className="pb-8 lg:pb-[160px]">
+        <div id="experience" className="pb-8 lg:pb-[160px]">
             <SiteContainer>
                 <div>
                     <div className="flex items-end gap-x-2 pb-10">

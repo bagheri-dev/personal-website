@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import Link from "next/link";
 import { ContactMeButton } from "../Shared/Button/ContactMe";
 import { ResumeButton } from "../Shared/Button/Resume";
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,6 +31,20 @@ export const Header = () => {
         },
     };
 
+    const scrollToSection = (sectionId : string) => {
+        const section = document.querySelector(sectionId);
+        if (section) {
+            const headerOffset = 120;
+            const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = sectionPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+            });
+        }
+    };
+
     return (
         <header className="py-2.5 px-4 lg:px-4">
             <div className="flex items-center justify-between max-w-7xl mx-auto">
@@ -44,12 +57,11 @@ export const Header = () => {
                             {menu.map((item) => (
                                 <li
                                     key={item.id}
-                                    className="transition-colors hover:text-[#12EAEA]"
+                                    className="transition-colors hover:text-[#12EAEA] cursor-pointer"
+                                    onClick={() => scrollToSection(item.src)}
                                 >
-                                    <Link href={item.src}>
-                                        <span className="text-[#12EAEA]">{item.id}.</span>
-                                        {item.name}
-                                    </Link>
+                                    <span className="text-[#12EAEA]">{item.id}.</span>
+                                    {item.name}
                                 </li>
                             ))}
                         </ul>
@@ -97,13 +109,14 @@ export const Header = () => {
                                 {menu.map((item) => (
                                     <li
                                         key={item.id}
-                                        className="transition-colors hover:text-[#12EAEA]"
-                                        onClick={() => setIsMenuOpen(false)}
+                                        className="transition-colors hover:text-[#12EAEA] cursor-pointer"
+                                        onClick={() => {
+                                            scrollToSection(item.src);
+                                            setIsMenuOpen(false);
+                                        }}
                                     >
-                                        <Link href={item.src}>
-                                            <span className="text-[#12EAEA]">{item.id}.</span>
-                                            {item.name}
-                                        </Link>
+                                        <span className="text-[#12EAEA]">{item.id}.</span>
+                                        {item.name}
                                     </li>
                                 ))}
                             </ul>

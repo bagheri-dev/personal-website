@@ -121,3 +121,6 @@
     @apply bg-[#0C1B31] text-white;
   }
 }
+html {
+  scroll-behavior: smooth;
+}

@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa"
 
 export const Socials = () => {
     return (
-        <section className="bg-[#0f1117] border-t border-white/10 py-12">
+        <section id="contact-me" className="bg-[#0f1117] border-t border-white/10 py-12">
             <div className="max-w-4xl mx-auto px-4 text-center">
                 <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-4">
                     Let’s Connect

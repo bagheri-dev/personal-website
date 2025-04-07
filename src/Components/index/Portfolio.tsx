@@ -41,7 +41,7 @@ const OtherProject = [
 
 export const Portfolio = () => {
     return (
-        <div className="pb-24 lg:pb-40">
+        <div id="projects" className="pb-24 lg:pb-40">
             <SiteContainer>
                 <div className="flex items-end gap-x-2 pb-10">
                     <Image className="w-10 lg:w-[54px]" src={"/3.svg"} alt="icon 1" width={54} height={82} />
