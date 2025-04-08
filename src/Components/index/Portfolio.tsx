@@ -4,6 +4,7 @@ import Image from "next/image"
 import { SiteContainer } from "../Shared/SiteContainer"
 import { CardPorfolio } from "./Card/CardPorfolio"
 import { CardOtherPortfolio } from "./Card/CardOtherPortfolio"
+import { CardPorfolioMobile } from "./Card/CardPorfolioMobile"
 
 const projects = [
     {
@@ -50,7 +51,7 @@ export const Portfolio = () => {
                         <div className="bg-[#4876CE] w-[150px] xl:w-[417px] h-0.5"></div>
                     </div>
                 </div>
-                <div className="space-y-6 pb-20">
+                <div className="hidden lg:block space-y-6 pb-20">
                     {projects.map((project, index) => (
                         <CardPorfolio
                             key={index}
@@ -63,19 +64,32 @@ export const Portfolio = () => {
                         />
                     ))}
                 </div>
-                <div>
-                    <h3 className="text-center text-[32px] text-[#B9B9B9] pb-20">
-                        Other Noteworthy Projects
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
-                        {OtherProject.map((project , index) => (
-                            <CardOtherPortfolio
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:hidden mb-16">
+                    {projects.map((project, index) => (
+                        <CardPorfolioMobile
                             key={index}
                             title={project.title}
+                            image={project.image}
                             description={project.description}
                             tech={project.tech}
                             github={project.github}
                             demo={project.demo}
+                        />
+                    ))}
+                </div>
+                <div>
+                    <h3 className="text-center text-xl lg:text-[32px] text-[#B9B9B9] pb-20">
+                        Other Noteworthy Projects
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                        {OtherProject.map((project, index) => (
+                            <CardOtherPortfolio
+                                key={index}
+                                title={project.title}
+                                description={project.description}
+                                tech={project.tech}
+                                github={project.github}
+                                demo={project.demo}
                             />
                         ))}
                     </div>
