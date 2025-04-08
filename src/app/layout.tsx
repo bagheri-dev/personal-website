@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Mahdi Bagheri | Software engineering & Frontend Developer",
     description: "Building modern, high-performance web applications with Next.js and React.",
     url: "https://bagheri-dev.info",
-    siteName: "Mahdi Bagheri",
+    siteName: "bagheri-dev",
     type: "website",
   },
 };

@@ -26,18 +26,18 @@ export const Work = () => {
                         </div>
                     </div>
 
-                    <div className="relative border-l-2 border-[#4876CE]/30 ml-4 pl-6 space-y-12">
+                    <div className="relative lg:border-l-2 border-[#4876CE]/30 lg:ml-4 lg:pl-6 space-y-12">
                         {workHistory.map((job, index) => (
                             <div key={index} className="relative">
                                 <div className="absolute z-10 -left-3 top-1 w-6 h-6 bg-[#4876CE] rounded-full border-4 border-[#0f1117] shadow-md"></div>
 
                                 <div className="rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-[0_8px_32px_0_rgba(72,118,206,0.2)] hover:border-[#4876CE]">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <h3 className="text-xl font-semibold text-white">{job.title}</h3>
-                                        <span className="text-sm text-gray-400">{job.date}</span>
+                                    <div className="flex justify-between items-center flex-wrap lg:flex-nowrap gap-2 mb-2">
+                                        <h3 className="text-lg lg:text-xl font-semibold text-white">{job.title}</h3>
+                                        <span className="text-xs lg:text-sm text-gray-400">{job.date}</span>
                                     </div>
 
-                                    <Link target="_blank" href={job.linkedin}><p className="text-[#87a2c7] font-medium mb-1">{job.company}</p></Link>
+                                    <Link target="_blank" href={job.linkedin}><p className="text-[#87a2c7] font-medium mb-1 underline">{job.company}</p></Link>
 
                                     <p className="text-gray-400 mb-3">{job.description}</p>
 
