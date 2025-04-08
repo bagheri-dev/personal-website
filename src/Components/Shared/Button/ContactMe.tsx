@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const ContactMeButton = () => {
     return (
-        <Link href={"#contact-me"}>
+        <Link href={"tel:09153405360"}>
             <motion.button
                 className="py-3 px-6 border border-[#12EAEA] rounded-[4px] cursorpo"
                 whileHover={{ scale: 1.05 }}

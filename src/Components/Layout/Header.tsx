@@ -50,7 +50,7 @@ export const Header = () => {
             <div className="flex items-center justify-between max-w-7xl mx-auto">
                 <div className="flex items-center gap-x-10 xl:gap-x-16">
                     <div>
-                        <Image unoptimized src={"/logo-web.png"} alt="logo" width={50} height={50} />
+                        <Image unoptimized src={"/logo.png"} alt="logo" width={80} height={50} />
                     </div>
                     <nav className="hidden lg:block">
                         <ul className="flex items-center lg:gap-x-10 xl:gap-x-12 py-6 xl:text-lg">
