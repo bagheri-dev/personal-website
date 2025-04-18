@@ -15,6 +15,14 @@ const projects = [
         github: "https://github.com/bagheri-dev/golden-coffee-shop",
         demo: "https://golden-coffee-shop.vercel.app/",
     },
+    {
+        title: "Artin Shop",
+        image: "/projects/artin-shop.png",
+        description: "Welcome to Artin Shop! Built with Next.js, this project combines performance, scalability, and modern design to deliver an exceptional user experience for coffee lovers worldwide.",
+        tech: ["Next.js", "Tailwind", "Sass"],
+        github: "https://github.com/bagheri-dev/artin-shop",
+        demo: "https://artin-shop-self.vercel.app/",
+    },
 ]
 const OtherProject = [
     {
