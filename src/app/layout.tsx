@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mahdi Bagheri | Software engineering & Frontend Developer",
     description: "Building modern, high-performance web applications with Next.js and React.",
-    url: "https://bagheri-dev.info",
-    siteName: "bagheri-dev",
+    url: "https://personal-website-phi-orpin-88.vercel.app/",
+    siteName: "Mahdi bagheri",
     type: "website",
   },
 };

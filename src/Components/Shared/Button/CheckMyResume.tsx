@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export const CheckMyResume = () => {
     return (
-        <Link href={"https://drive.usercontent.google.com/download?id=1VUT0_HCAA1cI9On_LiFFzc4UaJWd8VKT&export=download"}>
+        <Link target="_blank" href={"https://drive.google.com/file/d/1uj4GTXNe8ja66iddovXpdCpZ_AUBUf5W/view"}>
             <motion.button
                 whileHover={{
                     scale: 1.05,
