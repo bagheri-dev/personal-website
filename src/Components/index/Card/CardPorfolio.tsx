@@ -52,7 +52,7 @@ export const CardPorfolio = (props: Props) => {
                 </div>
             </div>
             <div>
-                <Image className="rounded-2xl" unoptimized src={image} alt={title} width={730} height={393} />
+                <Image className="rounded-2xl" src={image} alt={title} width={730} height={393} />
             </div>
         </div>
     );
