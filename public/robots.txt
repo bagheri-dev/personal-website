@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bagheri-dev.info/sitemap.xml
+Sitemap: https://personal-website-phi-orpin-88.vercel.app/sitemap.xml

@@ -9,15 +9,25 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Mahdi Bagheri | Software engineering | Frontend Developer",
-  description: "I'm a Frontend Developer specializing in Next.js, React, and modern UI/UX. Passionate about building fast and accessible web applications.",
-  keywords: ["Software engineering", "Frontend Developer", "Next.js", "React", "UI Engineer", "Web Development"],
+  title: "Mahdi Bagheri | Frontend Developer & UI Engineer",
+  description: "Hi, I'm Mahdi Bagheri — a frontend developer building fast, modern, and accessible web apps using Next.js, React, and Tailwind CSS.",
+  keywords: [
+    "Mahdi Bagheri",
+    "Frontend Developer",
+    "Next.js Developer",
+    "React Developer",
+    "Web Developer Iran",
+    "UI Engineer",
+    "Personal Website",
+    "Tailwind CSS Developer"
+  ],
   robots: "index, follow",
+  authors: [{ name: "Mahdi Bagheri", url: "https://personal-website-phi-orpin-88.vercel.app/" }],
   openGraph: {
-    title: "Mahdi Bagheri | Software engineering & Frontend Developer",
-    description: "Building modern, high-performance web applications with Next.js and React.",
+    title: "Mahdi Bagheri | Frontend Developer & UI Engineer",
+    description: "Building fast and modern web applications with React and Next.js.",
     url: "https://personal-website-phi-orpin-88.vercel.app/",
-    siteName: "Mahdi bagheri",
+    siteName: "Mahdi Bagheri",
     type: "website",
   },
 };
