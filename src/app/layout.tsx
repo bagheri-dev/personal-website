@@ -40,10 +40,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="fW0PQrZi5Pt-5zuEi4I1XuoUt4zHHw7jvvs5pDOxTtU" />
+      </head>
       <body
         className={`${openSans.variable} antialiased`}
       >
-        <HeaderConteiner/>
+        <HeaderConteiner />
         {children}
       </body>
     </html>
