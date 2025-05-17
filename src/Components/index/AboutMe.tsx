@@ -45,7 +45,7 @@ export const AboutMe = () => {
                         </div>
                     </div>
                     <div className="w-full">
-                        <Image className="lg:min-w-[527px]" src={"/funny-coding-r1ubgelhk4ffxyrt 2.png"} alt="about me" width={527} height={525} />
+                        <Image className="lg:min-w-[527px]" src={"/funny-coding.webp"} alt="about me" width={527} height={525} />
                     </div>
                 </div>
             </SiteContainer>

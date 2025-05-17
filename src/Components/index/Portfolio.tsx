@@ -9,22 +9,29 @@ import { CardPorfolioMobile } from "./Card/CardPorfolioMobile"
 const projects = [
     {
         title: "Golden Coffee Shop",
-        image: "/projects/golden-coffee-shop.png",
+        image: "/projects/golden-coffee-shop.webp",
         description: "Welcome to Golden Coffee Shop, an elegant and fully responsive online platform for selling coffee! Built with Next.js, this project combines performance, scalability, and modern design to deliver an exceptional user experience for coffee lovers worldwide.",
         tech: ["Next.js", "Tailwind", "Api"],
         github: "https://github.com/bagheri-dev/golden-coffee-shop",
         demo: "https://golden-coffee-shop.vercel.app/",
     },
     {
+        title: "StreamVibe",
+        image: "/projects/stream-vibe.webp",
+        description: "Stream Vibe is a movie web app that allows users to explore movies and their details, powered by the TMDB API. It features a clean, responsive design built with React, Next.js, and Tailwind CSS, offering a seamless browsing and subscription experience.",
+        tech: ["Next.js", "Tailwind", "REST Api" , "tanstack query", "Framer Motion", "Swiper"],
+        github: "https://github.com/bagheri-dev/streom-vibe",
+        demo: "https://streom-vibe.vercel.app/",
+    },
+]
+const OtherProject = [
+    {
         title: "Artin Shop",
-        image: "/projects/artin-shop.png",
         description: "Welcome to Artin Shop! Built with Next.js, this project combines performance, scalability, and modern design to deliver an exceptional user experience for coffee lovers worldwide.",
         tech: ["Next.js", "Tailwind", "Sass"],
         github: "https://github.com/bagheri-dev/artin-shop",
         demo: "https://artin-shop-self.vercel.app/",
     },
-]
-const OtherProject = [
     {
         title: "Nexcent",
         description: "This project is a modern UI built using React and Tailwind CSS. The goal of this project is to provide an engaging and seamless user experience with clean and optimized code. It includes reusable components, modular design, and customization options for fast and easy web application development.",
