@@ -12,7 +12,8 @@ const menu = [
     { id: 2, name: "Experience", src: "#experience" },
     { id: 3, name: "Projects", src: "#projects" },
     { id: 4, name: "Activity", src: "#activity" },
-    { id: 5, name: "Contact Me", src: "#contact-me" },
+    { id: 5, name: "FAQ", src: "#faq" },
+    { id: 6, name: "Contact Me", src: "#contact-me" },
 ];
 
 export const Header = () => {
@@ -56,7 +57,7 @@ export const Header = () => {
                         </Link>
                     </div>
                     <nav className="hidden lg:block">
-                        <ul className="flex items-center lg:gap-x-10 xl:gap-x-12 py-6 xl:text-lg">
+                        <ul className="flex items-center lg:gap-x-10 xl:gap-x-12 py-6">
                             {menu.map((item) => (
                                 <li
                                     key={item.id}
