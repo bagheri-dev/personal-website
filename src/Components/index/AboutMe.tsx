@@ -16,14 +16,11 @@ export const AboutMe = () => {
                         </div>
                         <div className="pb-4">
                             <p>
-                                Hello! I’m Mahdi Bagheri, a front-end designer and developer passionate about crafting seamless and impactful digital experiences that help businesses thrive.
+                                Hi, I’m Mahdi Bagheri, a passionate front-end designer and developer dedicated to creating seamless, high-impact digital experiences that empower businesses to grow. With a strong focus on clean code, modern design, and optimized performance, I craft user-centric solutions that not only meet but exceed expectations.
 
-                                In my projects, I combine clean code, modern design, and high performance, focusing on quality, attention to detail, and delivering solutions that meet user needs effectively. Proficient in modern UI design, code optimization, and creative problem-solving, I specialize in creating user-friendly interfaces using technologies like Tailwind CSS, JavaScript, React, and Next.js.
+                                Specializing in technologies like Tailwind CSS, JavaScript, React, and Next.js, I bring your ideas to life with precision, speed, and flair. Whether it’s optimizing user interfaces or building responsive websites, I combine creativity with technical expertise to deliver polished, professional products.
 
-                                Despite limited professional experience, I’ve honed my skills through personal projects, developing responsive websites and optimizing user interfaces to deliver high-quality solutions.
-
-                                If you’re looking to collaborate with an energetic and dedicated individual who can transform your ideas into professional, user-friendly products, I’d be thrilled to work with you. Let’s connect and explore how we can bring your ideas to life with innovative and user-centric solutions!
-                            </p>
+                                Although my professional experience is limited, my personal projects have refined my skills and enabled me to create responsive, high-quality websites that users love. If you're looking for a dedicated designer who can transform your vision into a functional, visually stunning product, let’s connect! Together, we can build something exceptional.                            </p>
                         </div>
                         <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-y-2 justify-items-center">
                             {[
