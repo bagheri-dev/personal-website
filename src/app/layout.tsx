@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { HeaderConteiner } from "@/Components/Layout/HeaderContainer";
-
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Mahdi Bagheri | Frontend Developer & UI Engineer",
@@ -44,7 +38,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="fW0PQrZi5Pt-5zuEi4I1XuoUt4zHHw7jvvs5pDOxTtU" />
       </head>
       <body
-        className={`${openSans.variable} antialiased`}
+        className={`antialiased`}
       >
         <HeaderConteiner />
         {children}
