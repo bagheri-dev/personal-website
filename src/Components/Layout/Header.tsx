@@ -5,13 +5,15 @@ import { ResumeButton } from "../Shared/Button/Resume";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 const menu = [
     { id: 1, name: "About Me", src: "#about-me" },
     { id: 2, name: "Experience", src: "#experience" },
     { id: 3, name: "Projects", src: "#projects" },
     { id: 4, name: "Activity", src: "#activity" },
-    { id: 5, name: "Contact Me", src: "#contact-me" },
+    { id: 5, name: "FAQ", src: "#faq" },
+    { id: 6, name: "Contact Me", src: "#contact-me" },
 ];
 
 export const Header = () => {
@@ -31,7 +33,7 @@ export const Header = () => {
         },
     };
 
-    const scrollToSection = (sectionId : string) => {
+    const scrollToSection = (sectionId: string) => {
         const section = document.querySelector(sectionId);
         if (section) {
             const headerOffset = 120;
@@ -50,10 +52,12 @@ export const Header = () => {
             <div className="flex items-center justify-between max-w-7xl mx-auto">
                 <div className="flex items-center gap-x-10 xl:gap-x-16">
                     <div>
-                        <Image unoptimized src={"/logo.png"} alt="logo" width={80} height={50} />
+                        <Link href="/">
+                            <Image unoptimized src={"/logo.webp"} alt="logo bagheri-dev" width={80} height={50} />
+                        </Link>
                     </div>
                     <nav className="hidden lg:block">
-                        <ul className="flex items-center lg:gap-x-10 xl:gap-x-12 py-6 xl:text-lg">
+                        <ul className="flex items-center lg:gap-x-10 xl:gap-x-12 py-6">
                             {menu.map((item) => (
                                 <li
                                     key={item.id}

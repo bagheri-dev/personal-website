@@ -6,7 +6,7 @@ const workHistory = [
     {
         company: "Tenetup",
         title: "Frontend Developer",
-        date: "2025/01/12 - 2025/03/21",
+        date: "3 projects",
         description: "At Tenetup, I contributed to the frontend development of four projects. During my time there, I significantly improved my teamwork and professional work ethic, while gaining valuable hands-on experience. One of the completed projects is bittsi.com, developed in collaboration with my amazing teammates. The remaining three projects are not yet live, but I will share the links as soon as they are launched.",
         tech: ["React", "TypeScript", "Tailwind", "NextJs"],
         linkedin: "https://www.linkedin.com/company/tenetup/"
