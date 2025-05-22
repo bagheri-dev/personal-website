@@ -9,10 +9,10 @@ import Link from "next/link";
 
 const menu = [
     { id: 1, name: "About Me", src: "#about-me" },
-    // { id: 2, name: "Experience", src: "#experience" },
     { id: 2, name: "Projects", src: "#projects" },
-    { id: 3, name: "FAQ", src: "#faq" },
-    { id: 4, name: "Contact Me", src: "#contact-me" },
+    { id: 3, name: "Advantages", src: "#advantages" },
+    { id: 4, name: "FAQ", src: "#faq" },
+    { id: 5, name: "Contact Me", src: "#contact-me" },
 ];
 
 export const Header = () => {
