@@ -72,7 +72,7 @@ export const AboutMe = () => {
 
                         {/* Animated Text */}
                         <motion.div variants={textVariants} className="pb-4">
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-gray-300 leading-relaxed">
                                 Hi, I’m Mahdi Bagheri, a passionate front-end designer and
                                 developer dedicated to creating seamless, high-impact digital
                                 experiences that empower businesses to grow. With a strong focus
