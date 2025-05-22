@@ -5,32 +5,32 @@ import { CardAccordion } from "./Card/CardAccordion"
 
 const faqData = [
     {
-        questions: "Do you only design user interfaces, or do you also develop them?",
-        answer: "I do both UI design and front-end development. My work combines modern visual design with clean, efficient code to create smooth and user-friendly digital experiences."
+        questions: "Will my website stand out from the competition?",
+        answer: "Absolutely! I craft visually stunning, user-centric websites using modern tools like Tailwind CSS and Next.js, ensuring your brand shines with a unique, engaging design that captivates your audience and drives results."
     },
     {
-        questions: "What technologies do you use?",
-        answer: "I work with modern tools like Tailwind CSS, JavaScript, React, and Next.js to build responsive, high-performance interfaces."
+        questions: "How fast can you deliver a high-quality website?",
+        answer: "Speed meets excellence in my workflow. By leveraging efficient frameworks like React and Next.js, I deliver pixel-perfect, fully responsive websites in record time—without cutting corners. Let’s discuss your timeline!"
     },
     {
-        questions: "Do you have professional work experience?",
-        answer: "While I have limited experience in professional environments, I've built and refined my skills through personal projects that focus on quality, responsiveness, and user experience."
+        questions: "Can you handle both design and development for my project?",
+        answer: "Yes, I’m your one-stop solution! From crafting intuitive UI designs to coding seamless front-end experiences, I combine creativity and technical expertise to bring your vision to life with precision and flair."
     },
     {
-        questions: "Can I collaborate with you on a website project?",
-        answer: "Absolutely! If you have an idea and need someone to turn it into a professional, user-friendly product, I’d love to collaborate."
+        questions: "How do you ensure my website performs well and ranks high?",
+        answer: "Performance is my priority. I optimize every site for lightning-fast load times, SEO, and accessibility, ensuring your website not only ranks higher but also keeps users coming back for more."
     },
     {
-        questions: "What does your typical workflow look like for a project?",
-        answer: "My process usually includes understanding your needs, designing the UI, developing the front-end, testing responsiveness, and optimizing for speed and usability."
+        questions: "What makes you different from other developers?",
+        answer: "Unlike others who rely on generic templates, I create tailored, high-performance websites with a focus on clean code, modern design, and your unique business goals. My passion for excellence sets me apart."
     },
     {
-        questions: "Do you take on full projects or just specific parts (like UI design or development)?",
-        answer: "I'm open to both! Whether you need a full website or just help with part of it—like UI design or front-end coding—I’m happy to assist."
+        questions: "Can I see your previous work to trust your skills?",
+        answer: "Of course! Explore my portfolio to see real-world projects that showcase my ability to deliver responsive, user-friendly websites. Let my work speak for itself—your dream site is next!"
     },
     {
-        questions: "Can I see examples of your work?",
-        answer: "Yes! Please visit the portfolio section of my website to see some of my recent projects and get a feel for my style and approach."
+        questions: "How do we collaborate to bring my vision to life?",
+        answer: "It starts with you. I listen to your goals, design a custom UI, develop a robust front-end, and rigorously test for flawless performance. Together, we’ll transform your idea into a website that wows."
     },
 ]
 
