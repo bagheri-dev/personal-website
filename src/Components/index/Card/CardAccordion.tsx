@@ -10,7 +10,7 @@ type Props = {
 export const CardAccordion = (props : Props) => {
     return (
         <div>
-            <AccordionItem value={`item-${props.item}`} className="bg-white/20 rounded-xl px-2 py-1">
+            <AccordionItem value={`item-${props.item}`} className="bg-[#0C1B31] rounded-xl px-2 py-1">
                 <AccordionTrigger className="text-lg lg:text-xl">{props.questions}</AccordionTrigger>
                 <AccordionContent className="text-sm lg:text-lg">
                     {props.answer}

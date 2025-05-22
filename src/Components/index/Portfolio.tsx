@@ -5,8 +5,27 @@ import { SiteContainer } from "../Shared/SiteContainer"
 import { CardPorfolio } from "./Card/CardPorfolio"
 import { CardOtherPortfolio } from "./Card/CardOtherPortfolio"
 import { CardPorfolioMobile } from "./Card/CardPorfolioMobile"
+import { motion } from "framer-motion"
+import React from "react";
 
-const projects = [
+interface Project {
+    title: string
+    image: string
+    description: string
+    tech: string[]
+    github: string
+    demo: string
+}
+
+interface OtherProject {
+    title: string
+    description: string
+    tech: string[]
+    github: string
+    demo: string
+}
+
+const projects: Project[] = [
     {
         title: "Golden Coffee Shop",
         image: "/projects/golden-coffee-shop.webp",
@@ -19,12 +38,13 @@ const projects = [
         title: "StreamVibe",
         image: "/projects/stream-vibe.webp",
         description: "Stream Vibe is a movie web app that allows users to explore movies and their details, powered by the TMDB API. It features a clean, responsive design built with React, Next.js, and Tailwind CSS, offering a seamless browsing and subscription experience.",
-        tech: ["Next.js", "Tailwind", "REST Api" , "tanstack query", "Framer Motion", "Swiper"],
+        tech: ["Next.js", "Tailwind", "REST Api", "tanstack query", "Framer Motion", "Swiper"],
         github: "https://github.com/bagheri-dev/streom-vibe",
         demo: "https://streom-vibe.vercel.app/",
     },
 ]
-const OtherProject = [
+
+const otherProjects: OtherProject[] = [
     {
         title: "Artin Shop",
         description: "Welcome to Artin Shop! Built with Next.js, this project combines performance, scalability, and modern design to deliver an exceptional user experience for coffee lovers worldwide.",
@@ -55,57 +75,140 @@ const OtherProject = [
     },
 ]
 
-export const Portfolio = () => {
+export const Portfolio: React.FC = () => {
+    const titleVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    }
+
+    const cardVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: (i: number) => ({
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5, delay: i * 0.2, ease: "easeOut" },
+        }),
+    }
+
+    const otherTitleVariants = {
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: { opacity: 1, scale: 1, transition: { duration: 0.6, delay: 0.4, ease: "easeOut" } },
+    }
+
+    const otherCardVariants = {
+        hidden: { opacity: 0, x: -30 },
+        visible: (i: number) => ({
+            opacity: 1,
+            x: 0,
+            transition: { duration: 0.5, delay: 0.6 + i * 0.15, ease: "easeOut" },
+        }),
+    }
+
     return (
-        <div id="projects" className="pb-24 lg:pb-40">
+        <div id="projects" className="relative pb-24 lg:pb-40 overflow-hidden">
+            <svg
+                className="absolute top-0 left-0 w-full h-full opacity-10 z-0"
+                viewBox="0 0 1440 800"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M0 400C200 300 400 500 600 400S1000 300 1200 400T1440 600"
+                    stroke="#4876CE"
+                    strokeWidth="4"
+                    strokeOpacity="0.5"
+                />
+                <circle cx="200" cy="600" r="100" fill="#4876CE" fillOpacity="0.2" />
+                <circle cx="1200" cy="200" r="80" fill="#4876CE" fillOpacity="0.2" />
+            </svg>
+
             <SiteContainer>
-                <div className="flex items-end gap-x-2 pb-10">
-                    <Image className="w-10 lg:w-[54px]" src={"/3.svg"} alt="icon 1" width={54} height={82} />
+                <motion.div
+                    className="flex items-end gap-x-2 pb-10"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    variants={titleVariants}
+                >
+                    <Image className="w-10 lg:w-[54px]" src={"/2.svg"} alt="icon 1" width={54} height={82} />
                     <div className="flex items-center gap-x-2 overflow-hidden">
                         <h2 className="text-lg lg:text-[32px] font-semibold text-white text-nowrap">Where I’ve worked</h2>
                         <div className="bg-[#4876CE] w-[150px] xl:w-[417px] h-0.5"></div>
                     </div>
-                </div>
+                </motion.div>
+
                 <div className="hidden lg:block space-y-6 pb-20">
                     {projects.map((project, index) => (
-                        <CardPorfolio
+                        <motion.div
                             key={index}
-                            title={project.title}
-                            image={project.image}
-                            description={project.description}
-                            tech={project.tech}
-                            github={project.github}
-                            demo={project.demo}
-                        />
-                    ))}
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:hidden mb-16">
-                    {projects.map((project, index) => (
-                        <CardPorfolioMobile
-                            key={index}
-                            title={project.title}
-                            image={project.image}
-                            description={project.description}
-                            tech={project.tech}
-                            github={project.github}
-                            demo={project.demo}
-                        />
-                    ))}
-                </div>
-                <div>
-                    <h3 className="text-center text-xl lg:text-[32px] text-[#B9B9B9] pb-20">
-                        Other Noteworthy Projects
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-                        {OtherProject.map((project, index) => (
-                            <CardOtherPortfolio
-                                key={index}
+                            custom={index}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.3 }}
+                            variants={cardVariants}
+                        >
+                            <CardPorfolio
                                 title={project.title}
+                                image={project.image}
                                 description={project.description}
                                 tech={project.tech}
                                 github={project.github}
                                 demo={project.demo}
                             />
+                        </motion.div>
+                    ))}
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:hidden mb-16">
+                    {projects.map((project, index) => (
+                        <motion.div
+                            key={index}
+                            custom={index}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.3 }}
+                            variants={cardVariants}
+                        >
+                            <CardPorfolioMobile
+                                title={project.title}
+                                image={project.image}
+                                description={project.description}
+                                tech={project.tech}
+                                github={project.github}
+                                demo={project.demo}
+                            />
+                        </motion.div>
+                    ))}
+                </div>
+
+                <div>
+                    <motion.h3
+                        className="text-center text-xl lg:text-[32px] text-[#B9B9B9] pb-20"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        variants={otherTitleVariants}
+                    >
+                        Other Noteworthy Projects
+                    </motion.h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                        {otherProjects.map((project, index) => (
+                            <motion.div
+                                key={index}
+                                custom={index}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                                variants={otherCardVariants}
+                            >
+                                <CardOtherPortfolio
+                                    title={project.title}
+                                    description={project.description}
+                                    tech={project.tech}
+                                    github={project.github}
+                                    demo={project.demo}
+                                />
+                            </motion.div>
                         ))}
                     </div>
                 </div>
