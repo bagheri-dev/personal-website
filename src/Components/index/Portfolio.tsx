@@ -106,22 +106,6 @@ export const Portfolio: React.FC = () => {
 
     return (
         <div id="projects" className="relative pb-24 lg:pb-40 overflow-hidden">
-            <svg
-                className="absolute top-0 left-0 w-full h-full opacity-10 z-0"
-                viewBox="0 0 1440 800"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M0 400C200 300 400 500 600 400S1000 300 1200 400T1440 600"
-                    stroke="#4876CE"
-                    strokeWidth="4"
-                    strokeOpacity="0.5"
-                />
-                <circle cx="200" cy="600" r="100" fill="#4876CE" fillOpacity="0.2" />
-                <circle cx="1200" cy="200" r="80" fill="#4876CE" fillOpacity="0.2" />
-            </svg>
-
             <SiteContainer>
                 <motion.div
                     className="flex items-end gap-x-2 pb-10"
