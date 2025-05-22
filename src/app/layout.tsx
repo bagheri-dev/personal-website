@@ -4,7 +4,7 @@ import { HeaderConteiner } from "@/Components/Layout/HeaderContainer";
 
 export const metadata: Metadata = {
   title: "Mahdi Bagheri | Frontend Developer & UI Engineer",
-  description: "Hi, I'm Mahdi Bagheri — a frontend developer building fast, modern, and accessible web apps using Next.js, React, and Tailwind CSS.",
+  description: "Hi, I'm Mahdi Bagheri, a passionate frontend developer focused on building fast, modern, and accessible web apps using Next.js, React, and Tailwind CSS. Let's create innovative digital experiences together!",
   keywords: [
     "Mahdi Bagheri",
     "Frontend Developer",
@@ -13,18 +13,23 @@ export const metadata: Metadata = {
     "Web Developer Iran",
     "UI Engineer",
     "Personal Website",
-    "Tailwind CSS Developer"
+    "Tailwind CSS Developer",
+    "Frontend Development",
+    "Web Development",
+    "UI/UX Engineer"
   ],
   robots: "index, follow",
   authors: [{ name: "Mahdi Bagheri", url: "https://personal-website-phi-orpin-88.vercel.app/" }],
   openGraph: {
     title: "Mahdi Bagheri | Frontend Developer & UI Engineer",
-    description: "Building fast and modern web applications with React and Next.js.",
+    description: "Building fast and modern web applications with React and Next.js. Passionate about creating accessible and responsive websites.",
     url: "https://personal-website-phi-orpin-88.vercel.app/",
     siteName: "Mahdi Bagheri",
     type: "website",
+    locale: "en_US",
   },
 };
+
 
 
 export default function RootLayout({
