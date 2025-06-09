@@ -42,6 +42,14 @@ const projects: Project[] = [
         github: "https://github.com/bagheri-dev/streom-vibe",
         demo: "https://streom-vibe.vercel.app/",
     },
+    {
+        title: "yek pelle balatar",
+        image: "/projects/yek-pelle-balatar.webp",
+        description: "This project is a professional website for `Yek Pelle Balatar Academy`, designed to showcase business consulting services, online courses, and content by Aydin Namdar. built using Next.js and Tailwind CSS, the site aims to offer a user-friendly and dynamic experience, enabling business growth and personal development through interactive features and educational resources. ",
+        tech: ["Next.js", "Tailwind","Framer Motion", "Swiper"],
+        github: "https://github.com/bagheri-dev/yek-pelle-balatar",
+        demo: "https://yek-pelle-balatar.vercel.app/",
+    },
 ]
 
 const otherProjects: OtherProject[] = [
