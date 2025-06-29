@@ -50,6 +50,14 @@ const projects: Project[] = [
         github: "https://github.com/bagheri-dev/yek-pelle-balatar",
         demo: "https://yek-pelle-balatar.vercel.app/",
     },
+    {
+        title: "Karazma",
+        image: "/projects/karazma.webp",
+        description: "The Karazma website is an educational and service platform dedicated to enhancing workforce skills and improving organizational performance. With a focus on scientific and principled methods, Karazma helps organizations build professional, committed, and productive teams. By offering training and consulting services, the platform aims to strengthen individual and team competencies to achieve sustainable organizational success.",
+        tech: ["Next.js", "Tailwind","Framer Motion", "Swiper"],
+        github: "https://github.com/bagheri-dev/karazma",
+        demo: "https://karazma.vercel.app/",
+    },
 ]
 
 const otherProjects: OtherProject[] = [
